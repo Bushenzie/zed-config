@@ -5,8 +5,8 @@
       "default_config_options": {
         "mode": "auto"
       },
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "agent": {
     "sidebar_side": "right",
@@ -15,10 +15,10 @@
     "default_model": {
       "enable_thinking": true,
       "provider": "openrouter",
-      "model": "z-ai/glm-5.1"
+      "model": "z-ai/glm-5.1",
     },
     "thinking_display": "always_collapsed",
-    "single_file_review": true
+    "single_file_review": true,
   },
   "ui_font_size": 15.0,
   "buffer_font_size": 13.0,
@@ -26,67 +26,67 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Triumph"
+    "dark": "Triumph",
   },
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
   "icon_theme": {
     "mode": "light",
     "light": "Bearded Icon Theme",
-    "dark": "Bearded Icon Theme"
+    "dark": "Bearded Icon Theme",
   },
   "buffer_font_features": {
-    "calt": false
+    "calt": false,
   },
   "file_scan_exclusions": ["**/node_modules"],
   "log": {
-    "lsp": "trace"
+    "lsp": "trace",
   },
   "lsp": {
     "tsgo": {
       "settings": {
         "typescript": {
           "tsserver": {
-            "maxTsServerMemory": 6144
-          }
+            "maxTsServerMemory": 6144,
+          },
         },
         "javascript": {
           "tsserver": {
-            "maxTsServerMemory": 6144
-          }
-        }
-      }
+            "maxTsServerMemory": 6144,
+          },
+        },
+      },
     },
     "biome": {
       "settings": {
-        "require_config_file": true
-      }
-    }
+        "require_config_file": true,
+      },
+    },
   },
   "languages": {
     "JavaScript": {
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
-      }
+        "source.organizeImports.biome": true,
+      },
     },
     "TypeScript": {
       "formatter": { "language_server": { "name": "biome" } },
       "language_servers": ["tsgo", "vtsls"],
       "code_actions_on_format": {
         "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
-      }
+        "source.organizeImports.biome": true,
+      },
     },
     "TSX": {
       "formatter": { "language_server": { "name": "biome" } },
       "language_servers": ["biome", "tsgo", "vtsls"],
       "code_actions_on_format": {
         "source.fixAll.biome": true,
-        "source.organizeImports.biome": true
-      }
-    }
+        "source.organizeImports.biome": true,
+      },
+    },
   },
   "colorize_brackets": true,
   "format_on_save": "on",
@@ -100,45 +100,45 @@
     "file_icons": true,
     "folder_icons": false,
     "entry_spacing": "comfortable",
-    "default_width": 270.0
+    "default_width": 270.0,
   },
   "git_panel": {
     "dock": "left",
     "status_style": "label_color",
-    "tree_view": true
+    "tree_view": true,
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "title_bar": {
-    "show_branch_status_icon": true
+    "show_branch_status_icon": true,
   },
   "search": {
     "regex": false,
     "button": false,
     "case_sensitive": true,
-    "center_on_match": true
+    "center_on_match": true,
   },
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "tabs": {
     "git_status": true,
     "file_icons": true,
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
   "tab_bar": {
     "show": true,
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": false,
   },
   "toolbar": {
     "quick_actions": false,
-    "selections_menu": false
+    "selections_menu": false,
   },
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
   "diagnostics": {
     "button": true,
@@ -148,13 +148,13 @@
       "update_debounce_ms": 50,
       "padding": 4,
       "min_column": 0,
-      "max_severity": null
-    }
+      "max_severity": null,
+    },
   },
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
-      "enabled": true
-    }
-  }
+      "enabled": true,
+    },
+  },
 }
