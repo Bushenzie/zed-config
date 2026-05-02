@@ -1,0 +1,18 @@
+{
+  "Console.log": {
+    "prefix": "clg",
+    "body": ["console.log($1)", "$0"],
+  },
+  "Create react component": {
+    "prefix": "rafc",
+    "body": [
+      "import type { FC } from 'react'",
+      "",
+      "type ${1:ComponentName}Props = {}",
+      "",
+      "export const ${1:ComponentName}: FC<${1:ComponentName}Props> = ({}) => {",
+      "  return <div>${1:ComponentName}</div>",
+      "}",
+    ],
+  },
+}

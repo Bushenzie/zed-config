@@ -1,0 +1,21 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-up": "editor::MoveLineUp",
+      "alt-down": "editor::MoveLineDown",
+      "ctrl-shift-a": "editor::ToggleComments",
+      "ctrl-d": "editor::DuplicateLineDown"
+    }
+  },
+  {
+    "bindings": {
+      "cmd-p": "file_finder::Toggle",
+      "cmd-shift-p": "command_palette::Toggle",
+      "cmd-shift-f": ["action::Sequence", ["outline_panel::Toggle", "pane::DeploySearch"]],
+      "cmd-shift-b": "git_panel::Toggle",
+      "cmd-b": "project_panel::Toggle",
+      "cmd-r": "agent::Toggle"
+    }
+  }
+]

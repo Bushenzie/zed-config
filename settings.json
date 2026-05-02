@@ -1,0 +1,160 @@
+{
+  "cli_default_open_behavior": "new_window",
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
+      "type": "registry"
+    }
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "play_sound_when_agent_done": "always",
+    "default_model": {
+      "enable_thinking": true,
+      "provider": "openrouter",
+      "model": "z-ai/glm-5.1"
+    },
+    "thinking_display": "always_collapsed",
+    "single_file_review": true
+  },
+  "ui_font_size": 15.0,
+  "buffer_font_size": 13.0,
+  "base_keymap": "VSCode",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Triumph"
+  },
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Bearded Icon Theme",
+    "dark": "Bearded Icon Theme"
+  },
+  "buffer_font_features": {
+    "calt": false
+  },
+  "file_scan_exclusions": ["**/node_modules"],
+  "log": {
+    "lsp": "trace"
+  },
+  "lsp": {
+    "tsgo": {
+      "settings": {
+        "typescript": {
+          "tsserver": {
+            "maxTsServerMemory": 6144
+          }
+        },
+        "javascript": {
+          "tsserver": {
+            "maxTsServerMemory": 6144
+          }
+        }
+      }
+    },
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TypeScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "language_servers": ["tsgo", "vtsls"],
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TSX": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "language_servers": ["biome", "tsgo", "vtsls"],
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    }
+  },
+  "colorize_brackets": true,
+  "format_on_save": "on",
+  "preferred_line_length": 100,
+  "tab_size": 2,
+  "show_edit_predictions": false,
+  "project_panel": {
+    "dock": "left",
+    "indent_size": 16,
+    "git_status": true,
+    "file_icons": true,
+    "folder_icons": false,
+    "entry_spacing": "comfortable",
+    "default_width": 270.0
+  },
+  "git_panel": {
+    "dock": "left",
+    "status_style": "label_color",
+    "tree_view": true
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "title_bar": {
+    "show_branch_status_icon": true
+  },
+  "search": {
+    "regex": false,
+    "button": false,
+    "case_sensitive": true,
+    "center_on_match": true
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "errors"
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  "toolbar": {
+    "quick_actions": false,
+    "selections_menu": false
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 50,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
+    }
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  }
+}
