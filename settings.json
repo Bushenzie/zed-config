@@ -14,7 +14,7 @@
       },
       "type": "custom",
       "command": "node",
-      "args": ["$HOME/claude-agent-acp/dist/index.js"],
+      "args": ["/Users/danielbuchal/claude-agent-acp/dist/index.js"],
     },
   },
   "agent": {
