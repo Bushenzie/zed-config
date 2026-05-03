@@ -16,6 +16,7 @@
       "cmd-shift-b": "git_panel::Toggle",
       "cmd-b": "project_panel::Toggle",
       "cmd-r": "agent::Toggle",
+      "cmd-shift-r": "agents_sidebar::ToggleThreadSwitcher",
     },
   },
 ]
