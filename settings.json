@@ -3,9 +3,18 @@
   "agent_servers": {
     "claude-acp": {
       "default_config_options": {
-        "mode": "auto"
+        "mode": "auto",
       },
       "type": "registry",
+    },
+    "Claude Code /w reviews": {
+      "default_config_options": {
+        "model": "default",
+        "mode": "acceptEdits",
+      },
+      "type": "custom",
+      "command": "node",
+      "args": ["$HOME/claude-agent-acp/dist/index.js"],
     },
   },
   "agent": {
