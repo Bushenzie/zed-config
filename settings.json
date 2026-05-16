@@ -1,6 +1,21 @@
 {
   "cli_default_open_behavior": "new_window",
   "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "model": "gpt-5.3-codex",
+        "mode": "auto",
+      },
+      "type": "registry",
+    },
+    "Codex /w reviews": {
+      "favorite_config_option_values": {
+        "model": ["gpt-5.5", "gpt-5.4", "gpt-5.3-codex", "gpt-5.2", "gpt-5.4-mini"],
+      },
+      "type": "custom",
+      "command": "npx",
+      "args": ["-y", "@zed-industries/codex-acp@0.10.0"],
+    },
     "claude-acp": {
       "default_config_options": {
         "mode": "auto",
@@ -118,6 +133,7 @@
   },
   "outline_panel": {
     "dock": "left",
+    "indent_size": 16,
   },
   "title_bar": {
     "show_branch_status_icon": true,
