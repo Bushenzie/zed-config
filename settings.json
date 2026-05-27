@@ -9,6 +9,10 @@
       "type": "registry",
     },
     "Codex /w reviews": {
+      "default_config_options": {
+        "model": "gpt-5.5",
+        "mode": "auto"
+      },
       "favorite_config_option_values": {
         "model": ["gpt-5.5", "gpt-5.4", "gpt-5.3-codex", "gpt-5.2", "gpt-5.4-mini"],
       },

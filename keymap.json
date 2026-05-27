@@ -5,8 +5,8 @@
       "alt-up": "editor::MoveLineUp",
       "alt-down": "editor::MoveLineDown",
       "ctrl-shift-a": "editor::ToggleComments",
-      "ctrl-d": "editor::DuplicateLineDown",
-    },
+      "ctrl-d": "editor::DuplicateLineDown"
+    }
   },
   {
     "bindings": {
@@ -15,8 +15,16 @@
       "cmd-shift-f": ["action::Sequence", ["outline_panel::Toggle", "pane::DeploySearch"]],
       "cmd-shift-b": "git_panel::Toggle",
       "cmd-b": "project_panel::Toggle",
-      "cmd-r": "agent::Toggle",
-      "cmd-shift-r": "agents_sidebar::ToggleThreadSwitcher",
-    },
+      "cmd-t": "agent::Toggle",
+      "cmd-shift-t": "agents_sidebar::ToggleThreadSwitcher",
+      "cmd-r": "buffer_search::DeployReplace",
+      "cmd-shift-r": ["pane::DeploySearch", { "replace_enabled": true }]
+    }
   },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "cmd-\\": "go_to_line::Toggle"
+    }
+  }
 ]
