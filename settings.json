@@ -10,8 +10,9 @@
     },
     "Codex /w reviews": {
       "default_config_options": {
+        "reasoning_effort": "high",
         "model": "gpt-5.5",
-        "mode": "auto"
+        "mode": "auto",
       },
       "favorite_config_option_values": {
         "model": ["gpt-5.5", "gpt-5.4", "gpt-5.3-codex", "gpt-5.2", "gpt-5.4-mini"],
@@ -25,15 +26,6 @@
         "mode": "auto",
       },
       "type": "registry",
-    },
-    "Claude Code /w reviews": {
-      "default_config_options": {
-        "model": "default",
-        "mode": "acceptEdits",
-      },
-      "type": "custom",
-      "command": "node",
-      "args": ["/Users/danielbuchal/claude-agent-acp/dist/index.js"],
     },
   },
   "agent": {
